@@ -1,4 +1,4 @@
-﻿Build started 2016-04-05 6:04:04 PM.
+﻿Build started 2016-04-05 7:30:40 PM.
      1>Project "C:\Users\Carlo Albino\Documents\GitHub\GAME2012-Assignment5\GAME2012-A5\OpenGL\OpenGL\OpenGL.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"..\Include\ImageMagick-6" /I..\Include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt opengl.cpp
@@ -12,4 +12,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.90
+Time Elapsed 00:00:05.31

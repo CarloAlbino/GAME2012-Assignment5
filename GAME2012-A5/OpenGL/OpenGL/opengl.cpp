@@ -203,13 +203,6 @@ static void InitializeGlutCallbacks()
 
 static void CreateVertexBuffer()
 {
-	/*Vertex Vertices[4] = {
-		Vertex(Vector3f(-1.f, -1.f, 0.5773f), Vector2f(0.f, 0.f)),
-		Vertex(Vector3f(0.f, -1.f, -1.15475f), Vector2f(0.5f, 0.f)),
-		Vertex(Vector3f(1.f, -1.f, 0.5773f), Vector2f(1.f, 0.f)),
-		Vertex(Vector3f(0.f, 1.f, 0.f), Vector2f(0.5f, 1.f))
-	};*/
-
 	Vertex Vertices[4] = {
 		Vertex(Vector3f(0.f, 0.f, 0.f), Vector2f(1.f, 1.f)),
 		Vertex(Vector3f(3.f, 0.f, 0.f), Vector2f(0.f, 1.f)),
