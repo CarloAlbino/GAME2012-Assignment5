@@ -74,7 +74,7 @@ static void RenderSceneCB()
 	Transform transform;
 	transform.Position(-1.5f, -1.0f, 5.0f);
 	transform.Rotation(0.f, 0.f, 0.f);
-	transform.SetPerspective(90.f, 1024, 768, 1.f, 1000.f);
+	transform.SetPerspective(55.f, 1024, 768, 1.f, 1000.f);
 	transform.SetCamera(*gameCamera);
 
 	//Update world matrix value on GPU
@@ -89,7 +89,7 @@ static void RenderSceneCB()
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
 	pTexture->Bind(GL_TEXTURE0);
 	//Draw the indices
-	glDrawElements(GL_TRIANGLES, 12, GL_UNSIGNED_INT, 0);
+	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 	glDisableVertexAttribArray(0);
 	glDisableVertexAttribArray(1);
@@ -211,9 +211,9 @@ static void CreateVertexBuffer()
 
 	Vertex Vertices[4] = {
 		Vertex(Vector3f(0.f, 0.f, 0.f), Vector2f(0.f, 0.f)),
-		Vertex(Vector3f(1.f, 0.f, 0.f), Vector2f(1.f, 0.f)),
-		Vertex(Vector3f(1.f, 1.f, 0.f), Vector2f(1.f, 1.f)),
-		Vertex(Vector3f(0.f, 1.f, 0.f), Vector2f(0.f, 1.f))
+		Vertex(Vector3f(3.f, 0.f, 0.f), Vector2f(1.f, 0.f)),
+		Vertex(Vector3f(3.f, 3.f, 0.f), Vector2f(1.f, 1.f)),
+		Vertex(Vector3f(0.f, 3.f, 0.f), Vector2f(0.f, 1.f))
 	};
 
 	glGenBuffers(1, &VBO);
@@ -227,8 +227,6 @@ static void CreateIndexBuffer()
 	unsigned int Indices[] = {
 		0, 3, 1,
 		1, 3, 2,
-		2, 3, 0,
-		0, 1, 2
 	};
 	//Generate Index Buffer
 	glGenBuffers(1, &IBO);
@@ -244,7 +242,7 @@ int main(int argc, char** argv)
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowSize(1024, 768);
 	glutInitWindowPosition(100, 100);
-	glutCreateWindow("Tutorial 03");
+	glutCreateWindow("Assignment 5");
 
 	InitializeGlutCallbacks();
 
